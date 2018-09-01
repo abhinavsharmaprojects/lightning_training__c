@@ -1,0 +1,27 @@
+<apex:page controller="UIThemeDemoController">
+    
+    UI Theme Global Variable ::: {!$User.UITheme}
+    <BR/>
+    
+    <!-- Salesforce Classic "Aloha" theme -->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme3'}">
+        Salesforce Classic Theme
+    </apex:outputPanel>
+    
+    <!-- Lightning Desktop theme -->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+        Lightning Desktop Theme
+    </apex:outputPanel>
+    
+    <!-- Salesforce mobile theme -->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4t'}">
+    	Salesforce Mobile Theme
+    </apex:outputPanel>
+
+    <BR/>    
+    UI Theme value from class ::: {!ContextUserUiTheme}
+    <BR/>
+    UI Theme Displayed value from class ::: {!ContextUserUiThemeDisplayed}
+    <BR/>
+    
+</apex:page>
