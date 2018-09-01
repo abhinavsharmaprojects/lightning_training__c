@@ -1,0 +1,29 @@
+<apex:page standardController="Opportunity" recordSetVar="opportunities" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="Edit Stage and Close Date" mode="edit">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="top">
+                <apex:outputPanel rendered="{!not(isnull(selected))}">
+                    <apex:commandButton value="Save" action="{!save}"/>
+                </apex:outputPanel>    
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:outputPanel rendered="{!isnull(selected)}">
+                <b>No records to display</b>
+            </apex:outputPanel>
+            
+            <apex:outputPanel rendered="{!not(isnull(selected))}">
+                <apex:pageBlockTable value="{!selected}" var="opp">
+                    <apex:column value="{!opp.name}"/>
+                    <apex:column headerValue="Stage">
+                        <apex:inputField value="{!opp.stageName}"/>
+                    </apex:column>
+                    <apex:column headerValue="Close Date">
+                        <apex:inputField value="{!opp.closeDate}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
