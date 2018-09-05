@@ -1,0 +1,7 @@
+<aura:component >
+    <lightning:layout horizontalAlign="spread" multipleRows="true">
+        <lightning:layoutItem flexibility="grow" size="12"><div class="slds-box">1</div></lightning:layoutItem>
+        <lightning:layoutItem flexibility="grow" size="8" mediumDeviceSize="10" largeDeviceSize="8"><div class="slds-box">2</div></lightning:layoutItem>
+        <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="2" largeDeviceSize="4"><div class="slds-box">3</div></lightning:layoutItem>
+     </lightning:layout>
+</aura:component>
