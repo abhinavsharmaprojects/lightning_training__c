@@ -1,0 +1,14 @@
+<!-- myCmp.cmp -->
+<aura:component>
+    
+    <aura:attribute name="myFacet" type="Aura.Component[]">
+        <div>A Div</div>
+    </aura:attribute>
+    
+    <aura:attribute name="myObject" type="Object" default='{"blog":true}'/>
+    <aura:attribute name="myMap" type="Map" default='{"blog":true}'/>
+    <aura:attribute name="myString" type="String" default="42"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+</aura:component>
