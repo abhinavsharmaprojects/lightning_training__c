@@ -1,0 +1,12 @@
+<!--c:child-->
+<aura:component>
+    
+    <aura:attribute name="childAttr" type="String" access="public"/>
+    
+    <p>childExpr childAttr: {!v.childAttr}</p>
+    
+    <p>
+        <lightning:button label="Update childAttr" onclick="{!c.updateChildAttr}"/>
+    </p>
+
+</aura:component>

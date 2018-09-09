@@ -1,3 +1,3 @@
 <aura:application extends="force:SLDS">
-    <c:myCmp/>
+    <c:CustomLabelSampleComp/>
 </aura:application>

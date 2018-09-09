@@ -1,0 +1,33 @@
+<aura:component >
+    
+    <aura:attribute name="myText" type="string" default="sampleTextValue1"/>
+    <aura:attribute name="myText1" type="string" default="sampleTextValue2"/>
+    
+    <aura:attribute name="mylabel" type="string" default=""/>
+	<aura:attribute name="mylabel2" type="string" default=""/>
+    <aura:attribute name="mydynamiclabel" type="string" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--Static Label-->
+    <lightning:input type="number" name="myNumber" label="{!$Label.c.Pick_A_Number}" value="54" />
+    
+    <!--Dynamically populating label parameters-->
+    <aura:unescapedHtml value="{!format($Label.c.PickOne, v.myText, v.myText1)}"/>
+    <BR></BR>
+    <lightning:button variant="brand" label="Update Text 1" title="Update Text 1" onclick="{! c.handleClick }" />
+    
+    <BR></BR>
+    myLabel Value :::: {!v.mylabel}
+    <BR></BR>
+    myLabel2 Value :::: {!v.mylabel2}
+    
+    <BR></BR>
+    
+    mydynamiclabel value :::: {!v.mydynamiclabel}
+    
+    <BR></BR>
+    
+    <!--Label from Apex-->
+    
+</aura:component>

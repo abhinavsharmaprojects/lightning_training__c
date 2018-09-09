@@ -49,11 +49,13 @@
             </lightning:select>
             
             <!-- Iterate over the list of contacts and display them -->
-            <aura:iteration var="contact" items="{!v.contacts}">
-        
+            <aura:iteration var="contact" items="{!v.contacts}" indexVar="index">
+        		Global ID of Parent ::: {!globalId}
+                <BR/>
+                
                 <!-- If you’re using a namespace, replace with myNamespace:contacts-->
-                <c:contacts contact="{!contact}"/>
-            
+                <c:contacts contact="{!contact}" componentInstanceId="{!globalId + '_card' + index}" aura:id="{!globalId + '_card' + index}"/>
+                
             </aura:iteration>
         
         </lightning:layoutItem>
