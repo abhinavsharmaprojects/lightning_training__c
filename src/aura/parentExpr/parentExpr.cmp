@@ -5,7 +5,7 @@
     <aura:handler name="change" value="{!v.parentAttr}" action="{!c.onParentAttrChange}"/>
     
     <!-- Instantiate the child component -->
-    <c:childExpr childAttr="{!v.parentAttr}" />
+    <c:childExpr childAttr="{#v.parentAttr}" />
     
     <p>parentExpr parentAttr: {!v.parentAttr}</p>
     

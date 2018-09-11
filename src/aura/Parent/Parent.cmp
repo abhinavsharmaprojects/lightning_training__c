@@ -4,7 +4,7 @@
     <aura:attribute name="parentAttr" type="String" default="parent attribute" access="public"/>
 
     <!-- Instantiate the child component -->
-    <c:child childAttr="{#v.parentAttr}" />
+    <c:child childAttr="{!v.parentAttr}" />
        
     <p>parentExpr parentAttr: {!v.parentAttr}</p>
     

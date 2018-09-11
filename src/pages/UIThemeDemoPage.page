@@ -5,23 +5,29 @@
     
     <!-- Salesforce Classic "Aloha" theme -->
     <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme3'}">
-        Salesforce Classic Theme
+        <h1>
+            Salesforce Classic Theme
+        </h1>
     </apex:outputPanel>
     
     <!-- Lightning Desktop theme -->
     <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
-        Lightning Desktop Theme
+        <h1>
+        	Lightning Desktop Theme
+        </h1>
     </apex:outputPanel>
     
     <!-- Salesforce mobile theme -->
     <apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme4t'}">
-    	Salesforce Mobile Theme
-    </apex:outputPanel>
+        <h1>
+    		Salesforce Mobile Theme
+        </h1>
+	</apex:outputPanel>
 
     <BR/>    
-    UI Theme value from class ::: {!ContextUserUiTheme}
+    <h1>UI Theme value from class ::: {!ContextUserUiTheme}</h1>
     <BR/>
-    UI Theme Displayed value from class ::: {!ContextUserUiThemeDisplayed}
+    <h1>UI Theme Displayed value from class ::: {!ContextUserUiThemeDisplayed}</h1>
     <BR/>
     
 </apex:page>
