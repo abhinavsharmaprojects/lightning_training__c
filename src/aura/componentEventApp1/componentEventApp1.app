@@ -1,3 +1,3 @@
 <aura:application extends="force:SLDS">
-    <c:Parent1/>
+    <c:componentEventReceiver/>
 </aura:application>
