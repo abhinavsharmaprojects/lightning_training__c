@@ -1,0 +1,7 @@
+<aura:component >
+    <lightning:icon size="medium" iconName="action:approval" alternativeText="Approved" />
+    Your application has been approved.
+    <div class="slds-m-bottom_x-large"></div>
+    <lightning:button variant="brand" label="Show Footer" onclick="{! c.handleShowModalFooter }" />
+	<lightning:overlayLibrary aura:id="overlayLib1"/>
+</aura:component>

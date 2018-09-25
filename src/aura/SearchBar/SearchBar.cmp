@@ -1,0 +1,9 @@
+<aura:component >
+
+    <aura:attribute name="timer" type="Integer"/>
+    <div>
+        <input type="text" class="form-control"
+                placeholder="Search" onkeyup="{!c.searchKeyChange}"/>
+    </div>
+
+</aura:component>
