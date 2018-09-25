@@ -63,6 +63,7 @@
             // Process value it call succeeded (unreachable in this sample)
         } catch (e) {
             console.error(e);
+            console.log(e.message);
         }
     },
     

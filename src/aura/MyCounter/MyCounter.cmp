@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes"
+                access="global">
+    
+    <ltng:require scripts="{!$Resource.counter}"
+                  afterScriptsLoaded="{!c.getValue}"/>
+    
+    <aura:attribute name="value" type="Integer"/>
+    
+    <lightning:card title="My Counter">
+        <aura:set attribute="actions">
+            <lightning:button label="Get Value" onclick="{!c.getValue}"/>
+            <lightning:button label="Increment" onclick="{!c.increment}"/>
+        </aura:set>
+        <h1 class="slds-align--absolute-center">{!v.value}</h1>
+    </lightning:card>
+    
+</aura:component>
