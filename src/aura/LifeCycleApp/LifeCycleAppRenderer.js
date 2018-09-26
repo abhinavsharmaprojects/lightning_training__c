@@ -1,7 +1,7 @@
 ({
     render: function(cmp, helper) {
        console.log('render: ' + cmp.get('v.title'));
-       return this.superRender()
+       return this.superRender();
     },
     afterRender: function(cmp, helper) {
         console.log('afterRender: ' + cmp.get('v.title')); 
